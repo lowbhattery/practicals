@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d</title>
+</head>
+<style>
+    div{
+        width: 6cm;
+        height: 2cm;
+        background-color: yellow;
+        border: 1px solid black;
+        transition:  2s;
+    }
+    .one{
+transform: skew(20deg,10deg);
+transition:  6s;
+    }
+    div:hover{
+        width: 10cm;
+        transform: rotate(180deg);
+        height: cm;
+    }
+</style>
+<body>
+    <div>this is normal</div>
+    <div class="one">this is the tilted one</div>
+</body>
+</html>

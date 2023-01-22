@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+        background-color: blueviolet;
+        animation-name: img;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes img{
+      10%{
+        background-color: bisque;
+      }
+      40%{
+        background-color: antiquewhite;
+
+      }
+      60%{
+        background-color: azure;
+      }
+      80%{
+        background-color: blanchedalmond;
+      }
+      100%{
+        background-color: burlywood;
+      }
+    }
+    li{
+float: left;
+    }
+    ul li a,.btn{
+        display: inline-block;
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 20px 25px;
+        animation-name: color;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        
+    
+    }
+    @keyframes color{
+        10%{
+            color: black;
+          }
+          40%{
+            color: white
+    
+          }
+          60%{
+            color: black
+          }
+          80%{
+            color: black;
+          }
+          100%{
+            color: black;
+          }
+    }
+    .dropdown-content a{
+        font-size: small;
+        color: black;
+        display: block;
+        text-transform: uppercase;
+        background-color: aqua;
+
+    }
+    .dropdown{
+        display: inline-block;
+        
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+    
+
+    }
+    
+    .dropdown:hover .dropdown-content{
+        display: inline-block;
+    }
+    .dropdown-content a:hover{
+        background-color: wheat;
+    }
+    .dropdown:hover .btn{
+        background-color: brown;
+    }
+    .item1{
+        grid-area: head;
+    }
+    .item2{
+        grid-area: body;
+    }
+    .item3{
+        grid-area: footer;
+    }
+    .item4{
+        grid-area: foot;
+    }
+    .container{
+       display: grid;
+       grid-template-areas: 
+       'head body footer'
+       'head body footer'
+       'head body footer'
+       'foot foot foot';
+       grid-gap: 30px;
+       padding: 12px 16px;
+       grid-template-columns: 20%,20%,20%,20%;
+      
+    }
+
+    <!-- @media screen and (max-width:780px){
+      .container{
+        display:flex;
+      }
+    } -->
+    img{
+        width: 100%;
+        height: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: 4s;
+        padding-top:10px ;
+        object-fit: contain;
+        display: flex;
+    }
+   
+    img :hover{
+       padding-top: 2px;
+       transition: all 0.2s ease-in-out;
+    }
+</style>
+<body>
+  <ul>
+    
+    <li><a href="">home</a></li>
+    <li><a href="">about</a></li>
+    <li><a href="">contact</a></li>
+    <li class="dropdown"><a href="#" class="btn">more</a>
+        <div class="dropdown-content">
+            <a href="">money</a>
+            <a href="">game</a>
+            <a href="">wealth</a>
+        </div></li>
+  </ul>  
+  <br><br><br><br><br>
+  <div class="container">
+    <div class="item1">
+       <img src="/assets/car3.jpg" alt="">
+       <br><br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque corrupti sint quae dolor consequuntur adipisci iste. Ipsum, quam unde qui libero rem temporibus a accusantium modi ex nulla aperiam corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempora tempore ratione neque dignissimos. Repellendus magni amet tempore inventore repudiandae maiores hic sunt soluta nisi voluptate, commodi neque magnam sint.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil porro voluptas illum vero facere maiores eligendi sed id? Accusantium error nihil dolores, consectetur unde animi asperiores laborum voluptatum exercitationem.
+
+    </div>
+    <br><br>
+    <div class="item2">
+ <img src="/assets/car5.jfif" alt="">
+ <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, exercitationem explicabo asperiores quam autem sint ipsa blanditiis magnam adipisci aut voluptas in! Mollitia, exercitationem aut perspiciatis aliquid aliquam modi cum.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus assumenda necessitatibus iusto doloremque illo unde, laborum quidem officia perferendis, atque illum nesciunt maiores architecto omnis odit magni? Sed, minus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam quasi delectus repellendus culpa perferendis laboriosam, enim molestiae impedit cupiditate minima temporibus porro asperiores ipsa voluptatum! Iusto harum unde ut.
+
+    </div>
+
+    <div class="item3">
+        <img src="/assets/int4.jpg" alt=""><br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam unde, consequuntur delectus similique voluptatem soluta veritatis atque minima harum provident ullam recusandae in velit asperiores architecto earum nulla qui!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, non quibusdam explicabo enim ea sit tenetur voluptas eligendi quasi sapiente, quia provident iure beatae, ratione alias deleniti officiis incidunt error!Lorem
+    </div>
+    
+<div class="item4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, accusantium totam quos ratione nihil reiciendis molestias deserunt magnam. Voluptatibus aut esse voluptas nihil quas rerum quaerat sed dolores quia quos.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi voluptatum debitis a dignissimos totam deleniti voluptatibus laudantium, sapiente ipsum cum incidunt laboriosam nisi veritatis repellendus odio nulla assumenda. Nemo.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem alias nulla eum perspiciatis iure doloribus est, maiores nisi ducimus maxime sequi, illum, atque aperiam blanditiis omnis dicta nostrum optio itaque.
+</div>
+    
+  </div>
+</body>
+</html>

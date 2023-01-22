@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+</head>
+<style>
+*{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+
+}
+.sidebar{
+    position: fixed;
+    background-color: blue;
+    width: 200px;
+    height: 100%;
+    left: -200px;
+
+}
+.sidebar ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+padding-left: 30px;
+line-height: 75px;
+border-top: 1px solid rgba(255, 255, 255, 2);
+color: white;
+text-transform: uppercase;
+box-sizing: border-box;
+transition: 4s;
+
+}
+.sidebar a:hover{
+padding-top: 30px;
+}
+
+#checked{
+    display: none;
+}
+#btn,#cancel{
+    position: relative;
+    cursor: pointer;
+}
+
+#checked:checked~ .sidebar{
+    left: 0%;
+}
+
+
+</style>
+
+
+<body>
+    <input type="checkbox" id="checked">
+    <label for="checked">
+        <span id="btn">y</span>
+        <span id="cancel">x</span>
+    </label>
+    <div class="sidebar">
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">info</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">before</a></li>
+        </ul>
+    </div>
+</body>
+</html>

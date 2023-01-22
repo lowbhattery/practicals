@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar3</title>
+</head>
+<style>
+
+*{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+
+
+}
+.sidebar{
+    background-color: red;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -200px;
+}
+li a{
+    font-size: x-large;
+    color: white;
+    text-transform: uppercase;
+line-height: 60px;
+padding-left: 30px;
+}
+#checked{
+    display: none;
+}
+#btn{
+    cursor: pointer;
+}
+#checked:checked~.sidebar{
+    left: 0%;
+}
+
+
+
+</style>
+<body>
+    <input type="checkbox" name="" id="checked">
+    <label for="checked">
+        <span id="btn">x</span>
+    </label>
+    <div class="sidebar">
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">see</a></li>
+            <li><a href="">wee</a></li>
+            <li><a href="">done</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

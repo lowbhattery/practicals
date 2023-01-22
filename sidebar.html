@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/deb47bb8b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0%;
+    list-style-type: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: aqua;
+    transition: all 2s ease;
+
+}
+.sidebar header{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+background-color: blue;
+user-select: none;
+    line-height: 70px;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    color: black;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255,1);
+    border-bottom: 1px solid black;
+    transition: 4s;
+}
+ul li a:hover{
+    padding-left: 40px;
+}
+#check{
+    display: none;
+}
+label #btn, #cancel{
+    position: absolute;
+    cursor: pointer;
+     
+}
+#btn{
+    left: 40px;
+    top: 25px;
+    font-size: larger;
+    padding: 6px 12px;
+}
+label #cancel{
+    z-index: 1111;
+left: 195px;
+top: 17px;
+
+
+}
+#check:checked~ .sidebar{
+    left: 0%;
+}
+
+
+
+</style>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check"><span id="btn">x</span>
+    <span id="cancel">y</span>
+    </label>
+    <div class="sidebar">
+        <header>my apps</header>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+        </ul>
+    </div>
+</body>
+</html>

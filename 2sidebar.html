@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+</head>
+<style>
+    *{list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+text-decoration: none;    
+    
+    }
+    header{
+        font-size: xx-large;
+        color: black;
+        background-color:pink;
+        padding-left: 60px;
+        line-height: 70px;
+        text-transform: capitalize;
+    }
+    .sidebar{
+        background: red;
+        position: fixed;
+width: 300px;
+height: 1000%;
+left: -3000px;
+    }
+    .sidebar ul a{
+        border-bottom: 1px solid rgba(225, 225, 225, 1);
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: white;
+        box-sizing: border-box;
+        transition: 4s;
+        line-height: 60px;
+        font-size: x-large;
+        padding-left: 50px;
+    }
+.sidebar ul li a:hover{
+    padding-left: 30px;
+}
+#checked{
+    display: none;
+}
+#btn{
+    position: relative;
+    cursor: pointer;
+    left: 300px;
+    top: 10px;
+}
+#checked:checked~ .sidebar{
+    left: 5%;
+}
+
+</style>
+<body>
+    <input type="checkbox" id="checked">
+    <label for="checked">
+        <span id="btn">x</span>
+    </label>
+    <div class="sidebar">
+        <header>menu</header>
+        <ul>
+            <li><a href="">home</a> </li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">history</a></li>
+        </ul>
+    
+    </div>
+
+</body>
+</html>

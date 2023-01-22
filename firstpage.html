@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ul{
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+    background-color: blue;
+    animation-name: me;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+}
+@keyframes me{
+    10%{
+        background-color: rebeccapurple;
+    }
+    15%{
+        background-color: yellow;
+    }
+    20%{
+        background-color: blue;
+    }
+    25%{
+        background-color: skyblue;
+    }
+    30%{
+        background-color: purple;
+    }
+    35%{
+        background-color: aquamarine;
+    }
+    40%{
+        background-color: whitesmoke;
+    }
+    45%{
+        background-color: seagreen;
+    }
+    50%{
+        background-color: pink;
+    }
+    70%{
+        background-color: orange;
+    }
+    80%{
+        background-color: tomato;
+    }
+    100%{
+        background-color: wheat;
+    }
+}
+
+li{
+    float: left;
+}
+li a , .btn{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+font-style: italic;
+display: block;
+text-align: left;
+}
+li a:hover, .dropdown:hover .btn{
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content{
+    display: inline-block;
+}
+.dropdown-content a:hover{
+    background-color: greenyellow;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.context:hover{
+    border: 1px solid black;
+}
+.move{
+    width: 100px;
+    height: 0.5cm;
+    background-color: rebeccapurple;
+    transition: 60s;
+    position: relative;
+    animation-name: low;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes low{
+    10%{
+        background-color: rebeccapurple;
+    }
+    15%{
+        background-color: yellow;
+    }
+    20%{
+        background-color: blue;
+    }
+    25%{
+        background-color: skyblue;
+    }
+    30%{
+        background-color: purple;
+    }
+    35%{
+        background-color: aquamarine;
+    }
+    40%{
+        background-color: whitesmoke;
+    }
+    45%{
+        background-color: seagreen;
+    }
+    50%{
+        background-color: pink;
+    }
+    70%{
+        background-color: orange;
+    }
+    80%{
+        background-color: tomato;
+    }
+    100%{
+        background-color: wheat;
+    }
+}
+.move:hover{
+    width: 10000px;
+}
+.tooltip{
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted black;
+}
+.tooltip-content.tooltip{
+    visibility: hidden;
+    width: 120px;
+    color: aliceblue;
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 1;
+
+}
+
+.tooltip:hover .tooltip-content{
+    visibility: visible;
+}
+
+
+
+
+</style>
+<body>
+
+
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li class="dropdown"><a href="" class="btn">more</a>
+        <div class="dropdown-content">
+        <a href="">mission</a>
+        <a href="">visioon</a>
+        <a href="">history</a>
+
+        </div>
+        </li>
+    </ul>
+    <br><br><br><br><br>
+    <div class="container">
+        <div class="context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita consequatur suscipit sunt provident similique aperiam aliquid natus ullam ratione ipsum quas, alias velit! Omnis aliquam veritatis placeat sequi exercitationem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A illo, mollitia pariatur maiores magni eaque voluptatibus consequatur iure repellat, recusandae cumque consequuntur est fugit voluptate quas tenetur quisquam, assumenda ab.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem optio tempore facilis consectetur eius aliquam voluptatum et pariatur ipsa fuga, vero corporis. Enim consectetur tenetur aliquid eligendi illo nihil?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed debitis pariatur labore, cum porro excepturi quo facere odio atque hic ipsa corporis repellendus commodi velit molestiae cumque iusto perferendis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis cupiditate cum perspiciatis. Id architecto, cumque ab illum quis aperiam in. Quis aut obcaecati nesciunt voluptatem eum natus placeat quibusdam.
+
+        </div>
+        <div class="context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita consequatur suscipit sunt provident similique aperiam aliquid natus ullam ratione ipsum quas, alias velit! Omnis aliquam veritatis placeat sequi exercitationem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A illo, mollitia pariatur maiores magni eaque voluptatibus consequatur iure repellat, recusandae cumque consequuntur est fugit voluptate quas tenetur quisquam, assumenda ab.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem optio tempore facilis consectetur eius aliquam voluptatum et pariatur ipsa fuga, vero corporis. Enim consectetur tenetur aliquid eligendi illo nihil?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed debitis pariatur labore, cum porro excepturi quo facere odio atque hic ipsa corporis repellendus commodi velit molestiae cumque iusto perferendis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis cupiditate cum perspiciatis. Id architecto, cumque ab illum quis aperiam in. Quis aut obcaecati nesciunt voluptatem eum natus placeat quibusdam.
+            
+        </div>
+        <div class="context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita consequatur suscipit sunt provident similique aperiam aliquid natus ullam ratione ipsum quas, alias velit! Omnis aliquam veritatis placeat sequi exercitationem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A illo, mollitia pariatur maiores magni eaque voluptatibus consequatur iure repellat, recusandae cumque consequuntur est fugit voluptate quas tenetur quisquam, assumenda ab.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem optio tempore facilis consectetur eius aliquam voluptatum et pariatur ipsa fuga, vero corporis. Enim consectetur tenetur aliquid eligendi illo nihil?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed debitis pariatur labore, cum porro excepturi quo facere odio atque hic ipsa corporis repellendus commodi velit molestiae cumque iusto perferendis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis cupiditate cum perspiciatis. Id architecto, cumque ab illum quis aperiam in. Quis aut obcaecati nesciunt voluptatem eum natus placeat quibusdam.
+            
+        </div>
+        <div class="context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita consequatur suscipit sunt provident similique aperiam aliquid natus ullam ratione ipsum quas, alias velit! Omnis aliquam veritatis placeat sequi exercitationem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A illo, mollitia pariatur maiores magni eaque voluptatibus consequatur iure repellat, recusandae cumque consequuntur est fugit voluptate quas tenetur quisquam, assumenda ab.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati autem optio tempore facilis consectetur eius aliquam voluptatum et pariatur ipsa fuga, vero corporis. Enim consectetur tenetur aliquid eligendi illo nihil?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed debitis pariatur labore, cum porro excepturi quo facere odio atque hic ipsa corporis repellendus commodi velit molestiae cumque iusto perferendis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis cupiditate cum perspiciatis. Id architecto, cumque ab illum quis aperiam in. Quis aut obcaecati nesciunt voluptatem eum natus placeat quibusdam.
+            
+        </div>
+    </div> <br><br>
+    <div class="tooltip">more
+        <span class="tooltip-content">click for more</span>
+    </div>
+    <br><br><br>
+<div class="move">
+    moving
+</div>
+    
+</body>
+</html>

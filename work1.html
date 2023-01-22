@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firstwork</title>
+</head>
+<style>
+    *{
+        list-style-type:none;
+        text-decoration: none;
+    }
+   
+    nav ul{
+        float: right;
+        background-color: brown;
+        height: auto;
+        width: 100%;
+    
+    }
+    nav ul li, .btn{
+        display: inline-block;
+margin-right: 50px;
+top: 0;
+    }
+    nav ul li a{
+        font-size: xx-large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .dropdown{
+        display: inline-block;
+        position: relative;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        padding: 12px 15px;
+        background-color: black;
+    }
+    .dropdown-content a{
+        font-size: larger;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+
+    }
+    .dropdown:hover .btn{
+        background-color: aqua;
+    }
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: blue;
+}
+.content{
+    float: left;
+    width: 33.122%;
+    
+}
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+@media screen and (max-width:600px) {
+    .content{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li> 
+              <li><a href="">contact</a></li>
+            <li class="dropdown"><a href="" class="btn">about</a>
+            <div class="dropdown-content">
+<a href="">history</a>
+<a href="">visioon</a>
+<a href="">mission</a>
+            </div>
+            </li>
+         
+        </ul>
+    </nav> <br><br><br><br>
+    <div class="container">
+        <div class="content">
+            <h2>header</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ipsum molestias a aut corrupti sapiente dolores, mollitia officia quam, vel assumenda error amet adipisci numquam. Tenetur aut est ratione inventore?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus deserunt suscipit quos, illum fuga laborum impedit unde incidunt officiis sed repellendus beatae ipsum. Asperiores iste explicabo dicta quaerat saepe!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aperiam nihil facilis non doloremque quam tempore iusto totam. Aliquam repudiandae eligendi sapiente! Inventore maiores, est tempora a nobis voluptate quaerat?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores accusamus officia suscipit odio quis in totam eum dolor vel quisquam nobis tenetur, ratione magni eos quo sequi. Omnis, debitis.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore distinctio delectus praesentium doloremque asperiores odit laudantium et totam nam beatae, sint architecto nostrum officia quidem in error id fugiat?
+</p>
+        </div>
+        <div class="content">
+            <h2>header</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ipsum molestias a aut corrupti sapiente dolores, mollitia officia quam, vel assumenda error amet adipisci numquam. Tenetur aut est ratione inventore?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus deserunt suscipit quos, illum fuga laborum impedit unde incidunt officiis sed repellendus beatae ipsum. Asperiores iste explicabo dicta quaerat saepe!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aperiam nihil facilis non doloremque quam tempore iusto totam. Aliquam repudiandae eligendi sapiente! Inventore maiores, est tempora a nobis voluptate quaerat?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores accusamus officia suscipit odio quis in totam eum dolor vel quisquam nobis tenetur, ratione magni eos quo sequi. Omnis, debitis.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore distinctio delectus praesentium doloremque asperiores odit laudantium et totam nam beatae, sint architecto nostrum officia quidem in error id fugiat?
+</p>
+        </div>
+        <div class="content">
+            <h2>header</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ipsum molestias a aut corrupti sapiente dolores, mollitia officia quam, vel assumenda error amet adipisci numquam. Tenetur aut est ratione inventore?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus deserunt suscipit quos, illum fuga laborum impedit unde incidunt officiis sed repellendus beatae ipsum. Asperiores iste explicabo dicta quaerat saepe!
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aperiam nihil facilis non doloremque quam tempore iusto totam. Aliquam repudiandae eligendi sapiente! Inventore maiores, est tempora a nobis voluptate quaerat?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores accusamus officia suscipit odio quis in totam eum dolor vel quisquam nobis tenetur, ratione magni eos quo sequi. Omnis, debitis.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore distinctio delectus praesentium doloremque asperiores odit laudantium et totam nam beatae, sint architecto nostrum officia quidem in error id fugiat?
+</p>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

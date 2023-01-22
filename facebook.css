@@ -1,0 +1,47 @@
+*{
+    padding: auto;
+    margin: auto;
+    text-decoration: none;
+
+}
+.text1 p{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: blue;
+    text-align: center;
+    margin: 130px;
+}
+.container{
+width: 10cm;
+
+}
+.input label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+
+}
+.input input{
+    width: 10cm;
+    height: 1cm;
+}
+.button input{
+    width: 10cm;
+    text-align: left;
+    color: black;
+    border-radius: 10px;
+    height: 1cm;
+    font-weight: bold;
+    background-color: blue;
+}
+a{
+    font-weight: bold;
+}
+.create button {
+    background-color:green ;
+    border-radius: 5px;
+    height: 1cm;
+    font-family: 'Times New Roman', Times, serif   ;
+    font-weight: bold;
+    font-size: large;
+}

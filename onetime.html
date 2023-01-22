@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+</head>
+<body>
+    <style>
+*{
+    padding: 0;
+    margin: 0%;
+    list-style-type: none;
+    text-decoration: none;
+}
+ul{
+    background-color: brown;
+    background-attachment: fixed;
+    float: right;
+}
+ul li, .btn{
+    display: inline-block;
+margin-right: 40px;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 12px 16px;
+    background-color: aqua;
+    z-index: 1;
+}
+ul li a{
+    font-size: x-large;
+    text-transform: capitalize;
+    text-overflow: clip;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.dropdown-content a{
+    color: black;
+    display: block;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.dropdown:hover .btn{
+    background-color: snow;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background: blue;
+}
+.btn{
+    color: red;
+}
+.gallary{
+    margin: 3px;
+    float: left;
+    width: 170px;
+    padding: 10px 16px;
+   
+}
+.gallary img{
+    width: 100%;
+    height: 200px;
+    
+}
+.disc{
+    border: 1px solid black;
+    text-align: center;
+}
+.gallary:hover{
+    border: 1px solid black;
+}
+
+.gridbox{
+    float: left;
+    width: 20%;
+    border: 1px solid red;
+    padding: 15px;
+    margin-left: 60px;
+    background: linear-gradient(red,blue) rgba(0, 0, 0, 0);
+}
+
+    </style>
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">contact</a></li>
+        <li class="dropdown"><a href="" class="btn">about</a>
+            <div class="dropdown-content">
+                <a href="#">London</a>
+                <a href="#">Paris</a>
+                <a href="#">Tokyo</a>
+              </div>
+        </li>
+    </ul> <br><br><br>
+
+
+<div class="gallary">
+    <a href="/assets/car3.jpg"><img src="/assets/car3.jpg
+        " alt="" width="200" height="400">
+    </a>
+    <div class="disc">car3</div>
+</div>
+<div class="gallary">
+    <a href="/assets/car2.jpg">
+        <img src="/assets/car2.jpg" alt="" width="200" height="400">
+    </a>
+    <div class="disc">car 2</div>
+</div>
+<div class="gallary">
+    <a href="/assets/car1.webp">
+        <img src="/assets/car1.webp" alt="" width="200" height="400">
+    </a>
+    <div class="disc">benz1</div>
+</div>
+<div class="gallary">
+    <a href="/assets/benz1.jpg">
+        <img src="/assets/benz1.jpg" alt="" width="200" height="400">
+    </a>
+    <div class="disc">car</div>
+</div>
+<div class="gallary">
+    <a href="/assets/benz1.jpg">
+        <img src="/assets/benz1.jpg" alt="" width="200" height="400">
+    </a>
+    <div class="disc">car</div>
+</div>
+<br><br><br><br><br>
+<content>
+
+<div class="container">
+    <div class="gridbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate, sunt aut iusto saepe architecto dolorum tempora beatae numquam dolore aliquam quas sapiente vero dignissimos et dolor exercitationem veniam mollitia?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, in alias unde quaerat nesciunt tempora corporis, ad voluptatem architecto, maxime perspiciatis. Dolores, in aspernatur? Aliquid ut id cum aperiam dolorum?    
+        </p>
+
+    </div>
+    <div class="gridbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate, sunt aut iusto saepe architecto dolorum tempora beatae numquam dolore aliquam quas sapiente vero dignissimos et dolor exercitationem veniam mollitia?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, in alias unde quaerat nesciunt tempora corporis, ad voluptatem architecto, maxime perspiciatis. Dolores, in aspernatur? Aliquid ut id cum aperiam dolorum?    
+        </p>
+
+    </div> <div class="gridbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate, sunt aut iusto saepe architecto dolorum tempora beatae numquam dolore aliquam quas sapiente vero dignissimos et dolor exercitationem veniam mollitia?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, in alias unde quaerat nesciunt tempora corporis, ad voluptatem architecto, maxime perspiciatis. Dolores, in aspernatur? Aliquid ut id cum aperiam dolorum?    
+        </p>
+
+    </div>
+
+</div>
+</content>
+</body>
+</html>

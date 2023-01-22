@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+        padding: 0%;
+        margin: 0%;
+        background-color: blue;
+        overflow: hidden;
+    }
+    li{
+        float: right;
+    }
+    li a,.btn{
+        display: inline-block;
+        padding: 12px 15px;
+        font-size: xx-large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        z-index: 1;
+        color: whitesmoke;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgb(80, 22, 175);
+    }
+    .dropdown-content a{
+        display: block;
+        color: rgb(12, 204, 22);
+        padding: 5px;
+        font-size: medium;
+    }
+    .dropdown:hover .btn{
+        background-color: red;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: antiquewhite;
+    }
+    .header{
+        grid-area: head;
+    }
+    .right{
+        grid-area: right;
+    
+    }
+    .left{
+        grid-area: left;
+    }
+    .middle{
+        grid-area: middle;
+    }
+.container{
+    display: grid;
+    grid-template-areas: 
+    'head head head head'
+    'right middle middle left'
+    'right middle middle left';
+}
+@media screen and (max-width:600px){
+    .container{
+        grid-template-areas: 
+        'head head head head'
+        'right right right right'
+        'middle middle middle middle'
+        'left left left left';
+    }
+}
+
+::-webkit-scrollbar
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+            <li class="dropdown"><a href="" class="btn">more</a>
+            <div class="dropdown-content">
+                <a href="">money</a>
+                <a href="">game</a>
+                <a href="">wealth</a>
+            </div></li>
+        </ul>
+    </nav>
+    <br><br>
+    <br><br><br>
+    <div class="container">
+        <div class="header">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus eligendi optio quos quam voluptates eum incidunt. Porro cupiditate tempora officia facilis nostrum dolore, voluptatibus quisquam inventore quibusdam velit culpa!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quam aliquid inventore corporis aut voluptas rem ex! Totam cumque ducimus commodi, aspernatur, nostrum optio officiis asperiores natus in iure suscipit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat recusandae, nobis, voluptatibus, est iusto voluptas nesciunt praesentium voluptate amet voluptatem itaque odit vitae voluptates. Corporis accusamus explicabo earum consequuntur!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus ea consequuntur recusandae, quo optio, distinctio nulla quasi debitis magnam deleniti sequi? Consequuntur quae porro quidem sed vero libero repellat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur modi voluptas repellat quaerat excepturi impedit provident laboriosam eum! Quaerat ab accusamus aspernatur nemo dolorem praesentium expedita illo aliquid officiis unde.
+
+            </p>
+        </div>
+        <div class="right">     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus eligendi optio quos quam voluptates eum incidunt. Porro cupiditate tempora officia facilis nostrum dolore, voluptatibus quisquam inventore quibusdam velit culpa!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quam aliquid inventore corporis aut voluptas rem ex! Totam cumque ducimus commodi, aspernatur, nostrum optio officiis asperiores natus in iure suscipit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat recusandae, nobis, voluptatibus, est iusto voluptas nesciunt praesentium voluptate amet voluptatem itaque odit vitae voluptates. Corporis accusamus explicabo earum consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus ea consequuntur recusandae, quo optio, distinctio nulla quasi debitis magnam deleniti sequi? Consequuntur quae porro quidem sed vero libero repellat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur modi voluptas repellat quaerat excepturi impedit provident laboriosam eum! Quaerat ab accusamus aspernatur nemo dolorem praesentium expedita illo aliquid officiis unde.
+            
+        </p></div>
+        <div class="middle">     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus eligendi optio quos quam voluptates eum incidunt. Porro cupiditate tempora officia facilis nostrum dolore, voluptatibus quisquam inventore quibusdam velit culpa!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quam aliquid inventore corporis aut voluptas rem ex! Totam cumque ducimus commodi, aspernatur, nostrum optio officiis asperiores natus in iure suscipit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat recusandae, nobis, voluptatibus, est iusto voluptas nesciunt praesentium voluptate amet voluptatem itaque odit vitae voluptates. Corporis accusamus explicabo earum consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus ea consequuntur recusandae, quo optio, distinctio nulla quasi debitis magnam deleniti sequi? Consequuntur quae porro quidem sed vero libero repellat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur modi voluptas repellat quaerat excepturi impedit provident laboriosam eum! Quaerat ab accusamus aspernatur nemo dolorem praesentium expedita illo aliquid officiis unde.
+            
+        </p></div>
+        <div class="left">     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus eligendi optio quos quam voluptates eum incidunt. Porro cupiditate tempora officia facilis nostrum dolore, voluptatibus quisquam inventore quibusdam velit culpa!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quam aliquid inventore corporis aut voluptas rem ex! Totam cumque ducimus commodi, aspernatur, nostrum optio officiis asperiores natus in iure suscipit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat recusandae, nobis, voluptatibus, est iusto voluptas nesciunt praesentium voluptate amet voluptatem itaque odit vitae voluptates. Corporis accusamus explicabo earum consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus ea consequuntur recusandae, quo optio, distinctio nulla quasi debitis magnam deleniti sequi? Consequuntur quae porro quidem sed vero libero repellat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur modi voluptas repellat quaerat excepturi impedit provident laboriosam eum! Quaerat ab accusamus aspernatur nemo dolorem praesentium expedita illo aliquid officiis unde.
+            
+        </p></div>
+
+    </div>
+</body>
+</html>

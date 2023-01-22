@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="shortcut icon" href="/assets/int4.jpg" type="image/x-icon">
+
+</head>
+<style>
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+.right{
+    margin-left: 20px;
+
+   
+}
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+.bottom{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.left{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-image:url(/assets/low1.jpg) ;
+background-position: top center;
+background-repeat: no-repeat;
+background-size: 400px;
+}
+.info{
+    padding-left: 30px;
+    margin-top: 500px;
+}
+.num{
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    width: 9cm;
+    text-align: center;
+    background-color: aqua;
+    
+}
+
+
+
+
+.t{
+    margin-top: 20px;
+    font-size: xx-large;
+    color: aqua;
+    text-transform: uppercase;
+
+}
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px){
+.left{
+    grid-area: left;
+}
+.right{
+    grid-area: right;
+}
+.container{
+    grid-template-areas: 'left left '
+    'righ right';
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+       <div class="left">
+        <div class="info">
+            <p class="t">low bhattery</p>   
+        <h5>DESIGNER</h5>
+        <h5>GHANA, AFRICA</h5>
+        <h5>LOW@GMAIL.COM</h5>
+        <h5>12345678764432</h5>
+        <div style="border-bottom: 1px outset black;"></div>    
+        <p>Skills</p>
+    </div>
+    <div class="range" style="padding-left:20px ;">
+    <label for="">Adobephoto shop</label>
+    <h4 class="num">90%</h4>
+    <label for="">illustration</label>
+    <h4 class="num">85%</h4>
+    <label for="">Photography</label>
+    <h4 class="num">50%</h4>
+    <label for="">media</label>
+    <h4 class="num">20%</h4>
+   </div>
+   
+       </div>
+       <div class="right">
+        <div class="box">
+        <h1>WORK EXPERIENCE</h1>
+        <br>
+      <h5> BACKEND AND FRONT END DEVELOPER/ W3SCHOOLS.COM</h5>
+        <div class="date">  &nbsp;&nbsp;  &nbsp; 5th JAN <span>CURRENT</span></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reprehenderit vero natus quis mollitia, obcaecati ab deleniti illum repudiandae iste placeat reiciendis unde, in ullam minima debitis est molestiae ducimus?</p>
+<div style="border-bottom: 1px outset black;"></div>      
+<h5> WEBDEVELOPER / SOMETHING.COM</h5>
+<div class="date">  &nbsp;&nbsp;  &nbsp; MAR 2022-NOV 2022</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reprehenderit vero natus quis mollitia, obcaecati ab deleniti illum repudiandae iste placeat reiciendis unde, in ullam minima debitis est molestiae ducimus?</p>
+<div style="border-bottom: 1px ridge black;"></div>  
+<h5> GRAPHIC DESIGNER / DESIGNERSOMETHING.COM</h5>
+<div class="date">  &nbsp;&nbsp;  &nbsp; MAR 2022-NOV 2022</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reprehenderit vero natus quis mollitia, obcaecati ab deleniti illum repudiandae iste placeat reiciendis unde, in ullam minima debitis est molestiae ducimus?</p>
+  
+</div>  
+<div class="bottom">
+    <h1>EDUCATION</h1> <br>
+    <p> W3SCHOOLS</p>
+    <h4>&nbsp;&nbsp;&nbsp; forever</h4>
+    <h4>WEB DEVELOPMENT ALL I NEED TO KNOW IN ALL</h4>
+    <div style="border-bottom: 1px outset black;"></div>
+    <p>LONDON BUSINESS SCHOOL</p>
+    <h4>2013-2022</h4>
+    <h4>MASTER DEGREE</h4>
+    <div style="border-bottom: 1px outset black;"></div>
+<p>SCHOOLOF CODING</p>
+<h4>2014-2015</h4>
+<h4>BACHOLER DEGREE</h4>
+
+
+</div>  
+</div>
+           
+    </div>
+
+
+</body>
+</html>

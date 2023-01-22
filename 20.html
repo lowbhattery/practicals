@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20th dec</title>
+</head>
+<style>
+    body{
+    background-image: linear-gradient(to right, rgba(184, 190, 207, 0.5),rgba(179, 235, 25, 0.5)),url(/assets/car1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    animation-name: low;
+    animation-duration: 120s;
+    animation-iteration-count: infinite ;
+    animation-direction: reverse;
+    }
+    @keyframes low{
+        15%{
+            background-image: url(/assets/car4.jpg);
+        }
+        30%{
+            background-image: url(/assets/car5.jfif);
+        }
+        50%{
+            background-image: url(/assets/int1.jpg);
+        
+        }
+        75%{
+            background-image: url(/assets/int2.webp);
+        }
+        100%{
+            background-image: url(/assets/benz1.jpg);
+        }
+    }
+ul{
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    
+}
+li{
+    float: left;
+    
+
+}
+li a, .btn{
+    display: inline-block;
+    padding: 12px 16px;
+    color: white;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.dropdown{
+    display: inline-block;
+    position: fixed;
+
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+}
+
+.dropdown-content a{
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    display: block;
+}
+
+.dropdown:hover .btn{
+    background-color: red;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: blue;
+}
+/*.text{
+    float: left;
+    width: 25%;
+    color: white;
+}
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:500px){
+    .text{
+        width: 50%;
+        
+    }
+}
+.main{
+    display: flex;
+    flex-direction: row; 
+}
+@media screen and (max-width:600px){
+    .main{
+        flex-direction: column;
+    }
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+<li><a href="">contact</a></li>
+<li><a href="">about</a></li>
+<li class="dropdown"><a href="" class="btn">more</a>
+    <div class="dropdown-content">
+<a href="">history</a>
+<a href="">vision</a>
+<a href="">mission</a>
+</div>
+</li>
+ </ul>
+    </nav>
+<br><br><br><br><br><br>
+<!-- <div class="container">
+    <div class="text">
+        <h2>head</h2>
+        <p><img src="/assets/benz1.jpg" alt="" width="200" height="200"></p>
+        <div class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque accusamus ea ipsam, modi dignissimos inventore omnis labore, culpa aperiam possimus veritatis sed et tempore id mollitia repellat, porro est?</div>
+
+    </div>
+    <div class="text">
+        <h2>head</h2>
+        <p><img src="/assets/benz1.jpg" alt="" width="200" height="200"></p>
+        <div class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque accusamus ea ipsam, modi dignissimos inventore omnis labore, culpa aperiam possimus veritatis sed et tempore id mollitia repellat, porro est?</div>
+        
+    </div>
+    <div class="text">
+        <h2>head</h2>
+        <p><img src="/assets/benz1.jpg" alt="" width="200" height="200"></p>
+        <div class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque accusamus ea ipsam, modi dignissimos inventore omnis labore, culpa aperiam possimus veritatis sed et tempore id mollitia repellat, porro est?</div>
+        
+    </div>
+    <div class="text">
+        <h2>head</h2>
+        <p><img src="/assets/benz1.jpg" alt="" width="200" height="200"></p>
+        <div class="disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque accusamus ea ipsam, modi dignissimos inventore omnis labore, culpa aperiam possimus veritatis sed et tempore id mollitia repellat, porro est?</div>
+        
+    </div>
+</div>    
+<br><br>
+<div class="main">
+    <div class="sub-main1">
+        <h2>head</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil distinctio quas blanditiis deserunt cupiditate, et ea, nobis beatae expedita unde fugiat eligendi culpa cum facilis ut placeat aliquid sapiente. Soluta?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error similique inventore maxime quisquam omnis consequatur facilis consequuntur quo, dolorum ullam totam ut mollitia dolorem possimus recusandae culpa. Magnam, eligendi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati consequatur vero veniam molestias voluptates labore est? Aperiam dolorum optio ducimus modi esse enim et quae, at fuga, maxime accusamus?
+        </p>
+    </div>
+     <div class="sub-main2"><h2>head</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil distinctio quas blanditiis deserunt cupiditate, et ea, nobis beatae expedita unde fugiat eligendi culpa cum facilis ut placeat aliquid sapiente. Soluta?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error similique inventore maxime quisquam omnis consequatur facilis consequuntur quo, dolorum ullam totam ut mollitia dolorem possimus recusandae culpa. Magnam, eligendi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati consequatur vero veniam molestias voluptates labore est? Aperiam dolorum optio ducimus modi esse enim et quae, at fuga, maxime accusamus?
+        </p></div>
+     <div class="sub-main3"><h2>head</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil distinctio quas blanditiis deserunt cupiditate, et ea, nobis beatae expedita unde fugiat eligendi culpa cum facilis ut placeat aliquid sapiente. Soluta?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error similique inventore maxime quisquam omnis consequatur facilis consequuntur quo, dolorum ullam totam ut mollitia dolorem possimus recusandae culpa. Magnam, eligendi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati consequatur vero veniam molestias voluptates labore est? Aperiam dolorum optio ducimus modi esse enim et quae, at fuga, maxime accusamus?
+        </p></div>
+
+     </div> -->
+    
+</body>
+</html>

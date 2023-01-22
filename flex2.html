@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex two</title>
+</head>
+<style>
+ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    background-color: blue;
+    overflow: hidden;
+}
+li{
+    float: right;
+}
+li a,.btn{
+    display: inline-block;
+    padding: 12px 15px;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    color: whitesmoke;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(80, 22, 175);
+}
+.dropdown-content a{
+    display: block;
+    color: rgb(12, 204, 22);
+    padding: 5px;
+    font-size: medium;
+}
+.dropdown:hover .btn{
+    background-color: red;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+   margin: 5px;
+}
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+            <li class="dropdown"><a href="" class="btn">more</a>
+            <div class="dropdown-content">
+                <a href="">money</a>
+                <a href="">game</a>
+                <a href="">wealth</a>
+            </div></li>
+        </ul>
+    </nav>
+    <br><br>
+    <br><br><br>
+<div class="container">
+<div class="text">
+    <h5>head</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis mollitia voluptatem assumenda consectetur quis, ut optio quo rerum quae aliquid ipsa accusantium, itaque aperiam corporis vitae sequi nam, possimus necessitatibus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci et explicabo accusantium doloremque ipsam ab temporibus praesentium sapiente soluta cupiditate harum omnis, repudiandae voluptatibus quisquam optio suscipit cum rem velit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sunt amet expedita minus debitis nesciunt dignissimos illum aspernatur optio. Incidunt unde quis tempore velit optio, pariatur explicabo veritatis nobis ipsa!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero nihil soluta nemo consequatur nesciunt, a eaque optio. Alias dolore molestiae maiores enim. Maiores rem, similique expedita fugiat deserunt possimus laborum!
+    </p>
+</div>
+<div  class="text"> <h5>head</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis mollitia voluptatem assumenda consectetur quis, ut optio quo rerum quae aliquid ipsa accusantium, itaque aperiam corporis vitae sequi nam, possimus necessitatibus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci et explicabo accusantium doloremque ipsam ab temporibus praesentium sapiente soluta cupiditate harum omnis, repudiandae voluptatibus quisquam optio suscipit cum rem velit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sunt amet expedita minus debitis nesciunt dignissimos illum aspernatur optio. Incidunt unde quis tempore velit optio, pariatur explicabo veritatis nobis ipsa!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero nihil soluta nemo consequatur nesciunt, a eaque optio. Alias dolore molestiae maiores enim. Maiores rem, similique expedita fugiat deserunt possimus laborum!
+    </p></div>
+<div  class="text"> 
+    <h5>head</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis mollitia voluptatem assumenda consectetur quis, ut optio quo rerum quae aliquid ipsa accusantium, itaque aperiam corporis vitae sequi nam, possimus necessitatibus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci et explicabo accusantium doloremque ipsam ab temporibus praesentium sapiente soluta cupiditate harum omnis, repudiandae voluptatibus quisquam optio suscipit cum rem velit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sunt amet expedita minus debitis nesciunt dignissimos illum aspernatur optio. Incidunt unde quis tempore velit optio, pariatur explicabo veritatis nobis ipsa!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero nihil soluta nemo consequatur nesciunt, a eaque optio. Alias dolore molestiae maiores enim. Maiores rem, similique expedita fugiat deserunt possimus laborum!
+    </p></div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
